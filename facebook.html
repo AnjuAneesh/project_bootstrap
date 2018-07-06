@@ -1,0 +1,179 @@
+<html>
+<head>
+	<title>facebook login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#fname').focus(function(){
+			$(this).val('')
+		});
+		$('#sname').focus(function(){
+			$(this).val('')
+		});
+		$('email').focus(function(){
+			$(this).val('');
+		});
+		$('#pass').focus(function(){
+			$(this).val('');
+		});
+		$('#button').click(function(e){
+			e.preventDefault();{
+	    var fn=$('input[name=fname]').val();
+		var ph=$('input[name=sname]').val();
+		var add=$('input[name=email]').val();
+		var em=$('input[name=pass]').val();
+	}
+});
+		$('#fname').blur(function(){
+		  if($('input[name=fname]').val()=='' || /[^a-zA-Z]/.test($('input[name=fname]').val()))
+		  {
+		  
+			   $("#fname").css('border','1px solid red');
+			   $("#fname").append("<span class='glyphicon glyphicon-exclamation-sign'></span>");
+		  }
+		  else
+		  {
+		  	$("#fname").css('border','1px solid #ccccff');
+		  }
+
+    });
+		$('#sname').blur(function(){
+  
+            if($('input[name=sname]').val()=='')
+                  $("#sname").css('border','1px solid red');
+            else
+		  {
+		  	$("#sname").css('border','1px solid #ccccff');
+		  }
+
+	});
+		$('#email').blur(function(){
+			if($('input[name=email]').val()=='')
+				 $("#email").css('border','1px solid red');
+			 else
+		  {
+		  	$("#email").css('border','1px solid #ccccff');
+		  }
+
+	
+	});
+		$('#pass').blur(function(){
+			if($('input[name=pass]').val()=='')
+				 $("#pass").css('border','1px solid red');
+			 else
+		  {
+		  	$("#pass").css('border','1px solid #ccccff');
+		  }
+	
+	
+    });
+});
+</script>
+</head>
+<body style="background-color:#eaeffa;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12" style="border:1px solid white;height:90px;width:100%;background-color:#3b5998;">
+				<form>
+				<table border="0">
+					<tr>
+						<td style="padding-left:170px;padding-right:200px;padding-top:25px;color:white;font-size:40px;font-family:Helvetica,Arial,sans-serif;padding-top:30px;px;"><b>facebook</b></td>
+						<td style="padding-left:230px;padding-right:20px;color:white;font-size:12px;">Email or phone<br>
+							<input type="text" size="25px" style="color:black;"></td>
+							<td style="padding-right:20px;color:white;font-size:12px;padding-top:15px;">Password<br>
+								<input type="password" size="23px" style="color:black;"><br><a href="" style="color:#6c89c6;margin-bottom:5px;">Forgotten account?</a></td>
+								<td style="font-size:12px;color:white;padding-top:17px;"><input type="submit" value="LogIn" style="border:1px solid black;height:22px;width:45px;background-color:#476bb8;"></td>
+							</tr>
+						</table>
+					</form>
+					</div>
+				</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-5">
+							<br><br>
+							<span style="font-family:inherit;font-size:20px;font-weight:bold;padding-left:40px;">Facebook helps you connect   and share with the <span style="padding-left:40px;">people in your life.</span></span>
+							<img src="facebook.png"style="padding-left:50px;">
+						</div>
+						<div class="col-sm-4" style="margin-left:70px;margin-top:20px;">
+							<b><span style="font-size:35px;margin-top:50px;">Create an account</span></b>
+							<br><b><span style="font-size:20px;">It's free and always will be.</span></b><br>
+							<br>
+							<form>
+								<input type="text" name="fname" id="fname" placeholder="First Name" style="border:1px solid #ccccff;height:36px;width:190px;border-radius:5px;margin-right:10px;font-size:18px;padding-left:10px;">
+								<input type="text" name="sname" id="sname" placeholder="Surname" style="border:1px solid #ccccff;height:36px;width:193px;border-radius:5px;margin-bottom:10px;font-size:18px;padding-left:10px;"><br>
+								<input type="text" name="email" id="email" placeholder="Mobile number or email address" style="border:1px solid #ccccff;height:36px;width:400px;border-radius:5px;margin-bottom:10px;font-size:18px;padding-left:10px;"><br>
+								<input type="password" name="pass" id="pass" placeholder="New Password" style="border:1px solid #ccccff;height:36px;width:400px;border-radius:5px;margin-bottom:20px;font-size:18px;padding-left:10px;"><br>
+
+								<label style="font-size:18px;">Birthday</label><br>
+								<select style="border:1px solid #ccccff;height:30px;width:40px;margin-right:5px;">
+								<option>8</option>
+								<option>day</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							    </select>
+							    <select style="border:1px solid #ccccff;height:30px;width:70px;margin-right:5px;">
+							    <option>jun</option>
+							    <option>month</option>
+							    <option>jan</option>
+							    <option>feb</option>
+							    <option>mar</option>
+							    <option>apr</option>
+							    <option>may</option>
+							    <option>jun</option>
+							    <option>jul</option>
+							    <option>aug</option>
+							    <option>sep</option>
+							    <option>oct</option>
+							    <option>nov</option>
+							    <option>dec</option>
+							    </select>
+							     <select style="border:1px solid #ccccff;height:30px;width:70px;margin-right:5px;">
+							    <option>1993</option>
+							    <option>2010</option>
+							    <option>2009</option>
+							    <option>2008</option>
+							    <option>2007</option>
+							    <option>2006</option>
+							    <option>2005</option>
+							    <option>2004</option>
+							    <option>2003</option>
+							    <option>2002</option>
+							    <option>2001</option>
+							    <option>2000</option>
+							    <option>1999</option>
+							    <option>1998</option>
+							    </select>
+							    
+							    
+
+
+
+								<a href="" style="font-size:12px;line-height:3px;padding-left:10px;">Why do I need to provide my <br><span style="padding-left:215px;">date of birth?</span></a><br><br>
+								<input type="radio" value="gender"><label style="padding-right:20px;padding-left:10px;font-size:15px;">Female</label>
+								<input type="radio" value="gender" style="padding-right:10px;"><label style="padding-right:20px;padding-left:10px;font-size:15px;">Male</label>
+								<br><br>
+								<span style="font-size:12px;">By clicking Sign Up, you agree to our <a href="">Terms, Data Policy </a>and<br><a href=""> Cookie Policy</a>. You may receive SMS notifications from us and <br>can opt out at any time</span><br>
+								<br>
+								<input type="submit" value="Sign Up" style="border:1px solid black;height:35px;width:170px;background-color:#239023;border-radius:5px;color:white">
+								<br><br>
+								<br>
+								<a href="">Create a page</a> for a celebrity,band or Buinesss.
+
+
+						</div>
+						<div class="col-sm-2">
+
+						</div>
+					</div>
+				</div>
+			</body>
+			</html>
+
